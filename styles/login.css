@@ -1,0 +1,40 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+}
+.footer div {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+.main{
+    max-height: 100vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: aliceblue;
+}
+
+
+.social{
+    width: 100%;
+
+}
+
+
+.right{
+    display: inline-block;
+}
+.r{
+    float: right;
+
+}
+#creater{
+    padding-left: 0;
+    float: left;
+
+}
+
