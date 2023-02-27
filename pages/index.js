@@ -24,49 +24,53 @@ export default function Home() {
       </Head>
       
 
-      <main class="main">
-        <h1>Heyo</h1>
+      <main>
+        <div class="navb">
+        <nav1 class="nav1 main">
 
-        <div>
-          <h2>
-            Another daily mood tracker with an twist    
-          </h2>
-        </div>
+          <div1 class="left">
+            <h1>Heyo</h1>
+          </div1>
 
-        <div>
-          <div>
-            Sign up
+          <div class="right end">
+            <h3>Contact Us</h3>
+
           </div>
 
-          <div>
-          <Link href="/logins">
-            Login
-          </Link>
-                          
+          <div class="right">
+            <h3>About Us</h3>
+          </div>
+
+          <div class="right">
+            <Link href="/logins">
+              <h3>Login</h3>
+            </Link>         
+          </div>
+        </nav1>
+        </div>
+        
+        <div class="body">
+
+          <div class="main heading">
+            <h2>
+              Another daily mood tracker with an cute twist    
+            </h2>
+            <p>wbuawudwuowd</p>
+          </div>
+
+          <div class="main sign">
+              Sign up
           </div>
         </div>
+        
 
 
         <footer class="footer">
-            <div>
-                Contact Us
-            </div> 
             
                 <div id="creater">
                     Created by Joey Lam
                 </div>
 
-                <div class="r">
-                    <div class="right">
-                        Instagram
-                    </div>
-                    <div class="right">
-                        Email
-                    </div>
-                    <div class="right">
-                        Number
-                    </div>   
-                </div>
                 
         </footer>
       </main>
