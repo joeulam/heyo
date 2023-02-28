@@ -7,7 +7,7 @@ export default function Home() {
   const router = useRouter();
   const handleClick = (e, path) => {
     e.preventDefault()
-    if (path === "/loginpage") {
+    if (path === "/signup") {
       console.log("I clicked on the login Page");
       // then you can: 
       router.push(path)
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
 
           <div class="right">
-            <Link href="/logins">
+            <Link href="/signup">
               <h3>Login</h3>
             </Link>         
           </div>
@@ -59,7 +59,9 @@ export default function Home() {
           </div>
 
           <div class="main sign">
-              Sign up
+          <Link href="/signup">
+              <h3>Sign up</h3>
+            </Link>         
           </div>
         </div>
         

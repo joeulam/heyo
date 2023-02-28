@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 
+
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
 const firebaseConfig = {
@@ -20,24 +21,10 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-
-createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    console.log("run")
-
-    return(true)
-    // ...
-
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
-  });
+import { getAuth } from "firebase/auth";
 
 
-  export const authi = getAuth()
-  export const createuser = createUserWithEmailAndPassword()
+
+
+  export const authi = auth
+    
