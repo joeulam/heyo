@@ -42,7 +42,7 @@ export default function Home() {
           </div>
 
           <div class="right">
-            <Link href="/signup">
+            <Link href="/">
               <h3>Login</h3>
             </Link>         
           </div>

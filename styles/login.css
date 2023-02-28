@@ -41,7 +41,14 @@
     padding: 1% 2% 1% 2%;
     border-radius: 10px;
 }
+.sign a{
+    color: black;
+    text-decoration: none;
+}
+#hidden{
+    display: none;
 
+}
 
 * {
     margin: 0;
