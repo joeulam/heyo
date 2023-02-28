@@ -4,18 +4,7 @@ import { useRouter } from "next/router";
 
 
 export default function Home() {
-  const router = useRouter();
-  const handleClick = (e, path) => {
-    e.preventDefault()
-    if (path === "/signup") {
-      console.log("I clicked on the login Page");
-      // then you can: 
-      router.push(path)
-    }
-    else{
-      console.log("failed");
-    }
-  }
+
 
   return (
     <>
@@ -33,16 +22,23 @@ export default function Home() {
           </div1>
 
           <div class="right end">
+            <Link href="/Contact_us">
             <h3>Contact Us</h3>
 
+            </Link>
+
+
           </div>
 
           <div class="right">
+          <Link href="/About_us">
+
             <h3>About Us</h3>
+            </Link>
           </div>
 
           <div class="right">
-            <Link href="/">
+            <Link href="/logins">
               <h3>Login</h3>
             </Link>         
           </div>
