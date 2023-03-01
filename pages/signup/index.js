@@ -40,9 +40,13 @@ export default function login() {
             </head>
 
             <main>
+            <div class="signinbox">
+
                 <div>
                     Sign up
                 </div>
+                <div class="signin">
+
                 <div>
                     <h3>Email:</h3>
                     <input type="email" id="email" name="email"></input>
@@ -51,13 +55,14 @@ export default function login() {
                     
                     <button id="submit" onClick={signup}>Submit</button>
                     
-                    <div id="hidden">
-                        Thank you
-                    </div>
+                    
+                </div>
                 </div>
                 <div>
                     <h1>Sign up with google</h1>
                 </div>
+                </div>
+
             </main>
 
 

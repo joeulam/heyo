@@ -32,19 +32,23 @@ export default function login() {
             </head>
 
             <main>
-            <div>
+            <div class="signinbox">
+                <h2>Login</h2>
+                <div class="signin">
                     <h3>Email:</h3>
-                    <input type="email" id="email" name="email"></input>
+                        <input type="email" id="email" name="email"></input>
                     <h3>password</h3>
-                    <input type="password" id="password" name="password"></input>
+                        <input type="password" id="password" name="password"></input>
+                    </div>
+                    
                     
                     <button id="submit" onClick={logins}>Submit</button>
-                    
-                    
+                    <div>
+                    <h3>Login with google</h3>
                 </div>
-                <div>
-                    <h1>Login with google</h1>
-                </div>
+            </div>
+
+                
             </main>
 
 
