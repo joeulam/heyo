@@ -1,4 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    /* CSS overrides for mobile here */
+    .footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #A0522D;
+        text-align: center;
+    }
+    .footer div {
+        margin-top: 1%;
+        
+    }
+
+    #creater{
+        padding-left: 0;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        
+
+    }
+
+    .main{
+        max-height: 100vh;
+        color: black;
+        background-color: #F5DEB3 ;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .body{
+        background-color: #F5DEB3 ;
+        height: 90vh;
+    }
+    .heading{
+        padding: 10% 50px 50px 0px;
+        margin-left: 25%;
+    }
+    .social{
+        width: 100%;
+    
+    }
+    
+    .sign{
+        margin: 10% 20% 0% 20%;
+        float: right;
+        border-style: solid;
+        padding: 1% 2% 1% 2%;
+        border-radius: 10px;
+        background-color: #996939;
+
+    }
+    .buttondiv{
+        display: inline-block;
+        width: 100%;
+        margin-left: -15%;
+    }
+
+    .buttondiv div{
+        display: block;
+        float: right;
+        margin: 10% 3% 2% 1%;
+
+    }
+
+    .buttondiv h3{
+        text-align: center;
+    }
+
+   
+
+
+
+
+    .sign a{
+        color: black;
+        text-decoration: none;
+    }
+    #hidden{
+        display: none;
+    
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Indie Flower', cursive;
+    }
+    
+    
+    
+    .nav1{
+        overflow: hidden;
+        height: 500px;
+        background-color: #da7d3b ;
+    
+    }
+    
+    .nav1 div{
+        display: inline-block;
+        padding: 2%;
+        
+    }
+    
+    
+    .nav1 h3{
+        display: block;
+        text-align: center;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #996939;
+    
+    }
+    .nav1 h1{
+        display: block;
+        text-align: center;
+    }
+    .nav1 a{
+        color: black;
+        text-decoration: none;
+    
+    }
+    .navb{
+        width: 100%;
+        top: 0;
+        height: 3%;
+        background-color: #da7d3b  ;
+    
+    }
+    
+    .left{
+        display: inline-block;
+    
+        padding: 2% 2% 2% 0%
+    }
+    .right{
+        float: right;        
+    }
+
+    .ends{
+        margin-right: 10%;
+    }
+
+ }
+
+
+ @media only screen and (min-width: 480px) {
+
+
 .footer{
     position: fixed;
     bottom: 0;
@@ -117,3 +269,5 @@
     margin-right: 17%;
 
 }
+
+ }
