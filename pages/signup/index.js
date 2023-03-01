@@ -43,11 +43,9 @@ export default function login() {
             <div class="signinbox">
 
                 <div>
-                    Sign up
-                </div>
+                    <h2>Sign up</h2>
                 <div class="signin">
 
-                <div>
                     <h3>Email:</h3>
                     <input type="email" id="email" name="email"></input>
                     <h3>password</h3>
@@ -59,9 +57,9 @@ export default function login() {
                 </div>
                 </div>
                 <div>
-                    <h1>Sign up with google</h1>
+                    <h3>Sign up with google</h3>
                 </div>
-                </div>
+            </div>
 
             </main>
 
