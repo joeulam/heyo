@@ -8,8 +8,7 @@ import React, { useEffect } from 'react';
 
     
 function signup(){
-    var x = document.getElementById("hidden");
-    x.style.display = 'block';
+
     // Sign Up function API taking in a email and password//
     createUserWithEmailAndPassword(authi, document.getElementById("email").value,document.getElementById("password").value)
         .then((cred) => {
@@ -19,7 +18,6 @@ function signup(){
             const errorCode = error.code;
             const errorMessage = error.message;
                         //Prints the error code//
-            document.getElementById("hidden").innerHTML = error.message 
         }
     );
 } 
