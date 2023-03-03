@@ -161,8 +161,8 @@
     padding: 5%;
 }
 
- .signin{
-
+ .signin input{
+    float: left;
 
 }
 

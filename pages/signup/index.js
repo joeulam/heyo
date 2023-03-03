@@ -26,7 +26,7 @@ function signup(){
 
 
 
-export default function login() {
+export default function accountcreater() {
 
 
     
@@ -40,7 +40,6 @@ export default function login() {
             <main>
             <div class="signinbox">
 
-                <div>
                     <h2>Sign up</h2>
                 <div class="signin">
 
@@ -49,11 +48,11 @@ export default function login() {
                     <h3>password</h3>
                     <input type="password" id="password" name="password"></input>
                     
-                    <button id="submit" onClick={signup}>Submit</button>
                     
                     
                 </div>
-                </div>
+                <button id="submit" onClick={signup}>Submit</button>
+
                 <div>
                     <h3>Sign up with google</h3>
                 </div>
