@@ -146,9 +146,17 @@
     }
 
  }
+/* -------- About Us page -------- */
+.title{
+    text-align: center;
+}
+.contactname{
+    margin-left: 46%;
+}
 
+.contactname h3{
 
-
+}
 
  /* -------- Sign in page for desktop -------- */
 .signinbox{
