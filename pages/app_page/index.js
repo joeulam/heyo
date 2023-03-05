@@ -20,7 +20,9 @@ export default function app_page() {
             <div>
                 {getdate()}
             </div>
-        
+            <div>
+                <h3>Focus mode</h3>
+            </div>
         </>
     )
 }
