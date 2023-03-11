@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import { useRouter } from "next/router";
+import  Router from "next/router";
 
 
 
@@ -13,7 +13,7 @@ function logins(){
     signInWithEmailAndPassword(authi, document.getElementById("email").value,document.getElementById("password").value)
     .then((userCredential) => {
       // Signed in and changes the URL //  
-      location.replace("/app_page")
+      Router.push("/app_page")
     })
     .catch((error) => {
       const errorCode = error.code;
