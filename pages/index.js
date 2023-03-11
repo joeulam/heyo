@@ -11,9 +11,9 @@ export default function Home() {
     <>
       <Head>
         {/*---- Imports ads ----*/}
-      <Script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></Script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8307744790595208"
+     crossorigin="anonymous"></script>
         <title>Heyo</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
       </Head>
       
 
@@ -51,14 +51,7 @@ export default function Home() {
             </h2>
             <p>wbuawudwuowd</p>
             {/*--- Ads ---*/}
-            <amp-ad width="100vw" height="320"
-              type="adsense"
-              data-ad-client="ca-pub-8307744790595208"
-              data-ad-slot="4900643708"
-              data-auto-format="rspv"
-              data-full-width="">
-            <div overflow=""></div>
-          </amp-ad>
+            
 
           </div>
 
