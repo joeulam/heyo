@@ -18,6 +18,23 @@ export default function app_page() {
             <div>
                 <h3>Focus mode</h3>
             </div>
+            <filedivs>
+                <div>
+                    Main page
+                </div>
+                <div>
+                    Past days
+                </div>
+                <div>
+                    To do
+                </div>
+                <div>
+                    Stats
+                </div>
+                <div>
+                    Chatbot
+                </div>
+            </filedivs>
         </>
     )
 }
