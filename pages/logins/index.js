@@ -19,7 +19,9 @@ function logins(){
       const errorCode = error.code;
       const errorMessage = error.message; // Outputs error message (Maybe try and get it to print only the error message)// 
       console.log(error.message)
+      document.getElementById("errormsg").innerHTML = errorMessage
     });
+    
 }
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
@@ -76,8 +78,13 @@ export default function login() {
                         </h3>
                     </button>
                 </div>
+                
             </div>
-
+            <div>
+                <h3 id="errormsg">
+                    
+                </h3>
+            </div>
                 
             </main>
 

@@ -307,5 +307,12 @@
 
  }
 
- /* --- TEMPLATE COLOR ---*/
+ /* -------- APP PAGE -------- */
 
+ .verification{
+    display: hidden;
+ }
+
+#userlogged{
+    
+}

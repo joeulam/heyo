@@ -12,11 +12,24 @@ function signup(){
     // Sign Up function API taking in a email and password//
     createUserWithEmailAndPassword(authi, document.getElementById("email").value,document.getElementById("password").value)
         .then((cred) => {
+            sendEmailVerification(authi)
+            .then(() => {
+                console.log("Sent");
+            })
+            .catch((error)=>{
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode);
+                console.log(errorMessage);
+
+            });
             location.replace("/app_page")                    
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
+            document.getElementById("errormsg").innerHTML = errorMessage
+
                         //Prints the error code//
         }
     );
@@ -82,9 +95,16 @@ export default function accountcreater() {
                             Sign up with google
                         </h3>
                     </button>
+                    
                 </div>
+                
             </div>
 
+            
+            <div>
+                    <h3 id="errormsg"></h3>
+
+                    </div>
             </main>
 
 
