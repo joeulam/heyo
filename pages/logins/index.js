@@ -21,8 +21,34 @@ function logins(){
       console.log(error.message)
     });
 }
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
+const provider = new GoogleAuthProvider();
 
+function google(){
+
+    signInWithPopup(authi, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        // IdP data available using getAdditionalUserInfo(result)
+        // ...
+        Router.push("/app_page")
+
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.customData.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+      });
+}
 export default function login() {
 
     return(
@@ -44,7 +70,11 @@ export default function login() {
                     
                     <button id="submit" onClick={logins}>Submit</button>
                     <div>
-                    <h3>Login with google</h3>
+                    <button onClick={google}>
+                        <h3>
+                            Login with google
+                        </h3>
+                    </button>
                 </div>
             </div>
 
