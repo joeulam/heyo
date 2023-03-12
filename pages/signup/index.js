@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+import  Router from "next/router";
 import { authi } from "../../lib/firebase.js";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -22,8 +22,31 @@ function signup(){
     );
 } 
                     
-                 // Hide
+const provider = new GoogleAuthProvider();
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
+function google(){
+  signInWithPopup(authi, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+    Router.push("/app_page")
+
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+    console.log(errorMessage);
+  });
+}
 
 
 export default function accountcreater() {
@@ -36,7 +59,7 @@ export default function accountcreater() {
             <head>
                 <title>Sign up</title>
             </head>
-
+           
             <main>
             <div class="signinbox">
 
@@ -54,7 +77,11 @@ export default function accountcreater() {
                 <button id="submit" onClick={signup}>Submit</button>
 
                 <div>
-                    <h3>Sign up with google</h3>
+                    <button onClick={google}>
+                        <h3>
+                            Sign up with google
+                        </h3>
+                    </button>
                 </div>
             </div>
 

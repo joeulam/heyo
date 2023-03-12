@@ -12,7 +12,8 @@ export default function app_page() {
             <title>Heyo</title>
 
         </head>
-
+        
+            
         <div class="verification">
             <h2>Please verify your account :D</h2>
             <button onClick={verify}>Verify</button>
@@ -43,6 +44,7 @@ export default function app_page() {
                     Chatbot
                 </div>
             </filedivs>
+        
         </>
     )
 }
