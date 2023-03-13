@@ -48,7 +48,7 @@ export default function mood(){
                     <label for = "10">10</label>
                     <br/>
                     <h2>Quick Write</h2>
-                    <textarea></textarea>
+                    <textarea id="writing"></textarea>
                 </form>
                 <button onClick={mooddata}>Submit</button>
 
