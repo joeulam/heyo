@@ -316,3 +316,19 @@
 #userlogged{
     
 }
+
+.mood{
+    display: inline;
+}
+
+.bodyapp{
+    background-color: #F5DEB3 ;
+    height: 82vh;
+    margin: 0% 10% 0% 20%;
+}
+
+
+
+.radio1{
+    margin-left: 2%;
+}

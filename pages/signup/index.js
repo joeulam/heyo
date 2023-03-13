@@ -15,6 +15,18 @@ function signup(){
             sendEmailVerification(authi)
             .then(() => {
                 console.log("Sent");
+                const usercol = collection(database,"users")
+                setDoc(doc(usercol, cred.user.uid),{
+                    date: serverTimestamp()
+                })
+                .then(docRef => {
+                    console.log("submitted")
+                })
+                .catch((error) =>{
+                    console.log(serverTimestamp)
+                    console.log(error)
+    
+                })
             })
             .catch((error)=>{
                 const errorCode = error.code;
@@ -23,6 +35,7 @@ function signup(){
                 console.log(errorMessage);
 
             });
+
             location.replace("/app_page")                    
         })
         .catch((error) => {
@@ -48,6 +61,7 @@ function google(){
     const user = result.user;
     // IdP data available using getAdditionalUserInfo(result)
     // ...
+    
     Router.push("/app_page")
 
   }).catch((error) => {
