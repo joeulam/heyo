@@ -57,7 +57,7 @@ export default function login() {
                 <title>Login</title>
             </head>
             
-            <main>
+            <main class="loginback">
             <div class="signinbox">
                 <h2>Login</h2>
                 <div class="signin">

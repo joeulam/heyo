@@ -160,9 +160,15 @@
 }
 
  /* -------- Sign in page for desktop -------- */
-.signinbox{
+.loginback{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+ .signinbox{
     width: fit-content;
-    height: 50%;
+    height: 20%;
     text-align: center;
     margin-left: 40%;
     margin-top:10%;
@@ -307,5 +313,28 @@
 
  }
 
- /* --- TEMPLATE COLOR ---*/
+ /* -------- APP PAGE -------- */
 
+ .verification{
+    display: hidden;
+ }
+
+#userlogged{
+    
+}
+
+.mood{
+    display: inline;
+}
+
+.bodyapp{
+    background-color: #F5DEB3 ;
+    height: 82vh;
+    margin: 0% 10% 0% 20%;
+}
+
+
+
+.radio1{
+    margin-left: 2%;
+}
