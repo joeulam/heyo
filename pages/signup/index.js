@@ -87,7 +87,7 @@ export default function accountcreater() {
                 <title>Sign up</title>
             </head>
            
-            <main>
+            <main class="loginback">
             <div class="signinbox">
 
                     <h2>Sign up</h2>

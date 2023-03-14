@@ -59,8 +59,7 @@ export default function login() {
                 <title>Login</title>
             </head>
             
-            <main class="login_main">
-                <div class="outerbody">
+            <main class="loginback">
 
                 
                 <body class="signinbody">
@@ -93,7 +92,6 @@ export default function login() {
 
 
                 </body>
-                </div>
            
                 
             </main>

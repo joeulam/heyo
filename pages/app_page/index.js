@@ -14,7 +14,8 @@ export default function app_page() {
 
         </head>
         
-            
+            <main class="mainapp">
+
         <div class="verification">
             <h2>Please verify your account :D</h2>
             <button onClick={verify}>Verify</button>
@@ -23,13 +24,12 @@ export default function app_page() {
 
         
         <body class="bodyapp">
-        <div>
-            <h2 id="userlogged">
-                user
-            </h2>
+            <div>
+                <h2 id="userlogged">
+                    user
+                </h2>
             </div>
-
-
+            
             <div>
                 <h3>Focus mode</h3>
             </div>
@@ -57,7 +57,8 @@ export default function app_page() {
             </filedivs>
            
         </body>
-            
+        </main>
+
         </>
         
     )
