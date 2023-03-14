@@ -59,32 +59,42 @@ export default function login() {
                 <title>Login</title>
             </head>
             
-            <main>
-            <div class="signinbox">
-                <h2>Login</h2>
-                <div class="signin">
-                    <h3>Email:</h3>
-                        <input type="email" id="email" name="email"></input>
-                    <h3>password</h3>
-                        <input type="password" id="password" name="password"></input>
-                    </div>
-                    
-                    
-                    <button id="submit" onClick={logins}>Submit</button>
-                    <div>
-                    <button onClick={google}>
-                        <h3>
-                            Login with google
-                        </h3>
-                    </button>
-                </div>
+            <main class="login_main">
+                <div class="outerbody">
+
                 
-            </div>
-            <div>
-                <h3 id="errormsg">
-                    
-                </h3>
-            </div>
+                <body class="signinbody">
+                    <div class="signinbox">
+                        <h2>Login</h2>
+
+                        <div class="signin">
+                            <h3>Email:</h3>
+                                <input type="email" id="email" name="email"></input>
+                            <br/>
+                            <h3>password</h3>
+                                <input type="password" id="password" name="password"></input>
+                        </div>
+                        
+                        <br/>
+                        <button id="submit" onClick={logins}>Submit</button>
+                        <div>
+                            <button onClick={google}>
+                                <h3>
+                                    Login with google
+                                </h3>
+                            </button>
+                        </div>
+                    <h3 id="errormsg"></h3>
+                    </div>
+
+                    <div class="leftnote">
+
+                    </div>
+
+
+                </body>
+                </div>
+           
                 
             </main>
 
