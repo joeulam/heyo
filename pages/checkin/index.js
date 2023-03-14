@@ -10,8 +10,8 @@ export default function mood(){
     return(
         <>
             <head>Heyo</head>
-        <body>
-        <div>
+        <body class="recordback" >
+        <div class="record">
                 <div class="mood">
                 <h3>How are you feeling today? </h3> <p>(1 is the worst 10 is the best)</p>
 
@@ -52,11 +52,11 @@ export default function mood(){
                 </form>
                 <button onClick={mooddata}>Submit</button>
 
-                
-            </div>
-            <div>
+                <div>
                <button onClick={backer}>Go back</button>
             </div>
+            </div>
+            
         </body>
         
         </>
