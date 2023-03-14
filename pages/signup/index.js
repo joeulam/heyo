@@ -12,11 +12,37 @@ function signup(){
     // Sign Up function API taking in a email and password//
     createUserWithEmailAndPassword(authi, document.getElementById("email").value,document.getElementById("password").value)
         .then((cred) => {
+            sendEmailVerification(authi)
+            .then(() => {
+                console.log("Sent");
+                const usercol = collection(database,"users")
+                setDoc(doc(usercol, cred.user.uid),{
+                    date: serverTimestamp()
+                })
+                .then(docRef => {
+                    console.log("submitted")
+                })
+                .catch((error) =>{
+                    console.log(serverTimestamp)
+                    console.log(error)
+    
+                })
+            })
+            .catch((error)=>{
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode);
+                console.log(errorMessage);
+
+            });
+
             location.replace("/app_page")                    
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
+            document.getElementById("errormsg").innerHTML = errorMessage
+
                         //Prints the error code//
         }
     );
@@ -35,6 +61,7 @@ function google(){
     const user = result.user;
     // IdP data available using getAdditionalUserInfo(result)
     // ...
+    
     Router.push("/app_page")
 
   }).catch((error) => {
@@ -82,9 +109,16 @@ export default function accountcreater() {
                             Sign up with google
                         </h3>
                     </button>
+                    
                 </div>
+                
             </div>
 
+            
+            <div>
+                    <h3 id="errormsg"></h3>
+
+                    </div>
             </main>
 
 
