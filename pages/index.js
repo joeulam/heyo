@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from "next/router";
+import Image from 'next/image';
 
 import Script from 'next/script'
 
@@ -17,7 +18,7 @@ export default function Home() {
       </Head>
       
 
-      <main>
+      <main class="lamding">
         <div class="navb">
           <nav1 class="nav1 main">
 
@@ -42,26 +43,36 @@ export default function Home() {
             </div>
           </nav1>
         </div>
-        
-        <div class="body">
+        <div class="logob">
+          <div class="logo">
+          <Image
+            priority
+            src="/logo.svg"
+            height={250}
+            width={250}
+          />
+          </div>
+        </div>
 
+        <div class="body">
+          
           <div class="main heading">
             <h2>
               Another daily mood tracker with an cute twist    
             </h2>
-            <p>wbuawudwuowd</p>
+            <p></p>
             {/*--- Ads ---*/}
             
 
           </div>
 
           <div class="buttondiv">
-              <div class="sign">
+              <div class="sign start">
                 <Link href="/signup">
                     <h3>Sign up</h3>
                   </Link>         
               </div>
-              <div class="sign ends">
+              <div class="ends sign">
                 <Link href="/logins">
                   <h3>Login</h3>
                 </Link>

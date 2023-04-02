@@ -4,235 +4,116 @@
     /* CSS overrides for mobile here */
 
     /* --- landing page --- */ 
-    .footer{
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #A0522D;
-        text-align: center;
-    }
-    .footer div {
-        margin-top: 1%;
-        
-    }
-
-    #creater{
-        padding-left: 0;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        
-
-    }
+   
 
     .main{
-        max-height: 100vh;
+        max-height: 100%;
         color: black;
-        background-color: #F5DEB3 ;
-        margin-left: 10%;
-        margin-right: 10%;
+        background-color: #FFEBCC ;
+        
+        overflow: hidden;
+
     }
     
     .body{
-        background-color: #F5DEB3 ;
-        height: 90vh;
+        background-color: #FFEBCC ;
+        height: 100%;
+        overflow: hidden;
+    }
+    .logob{
+        background-color: #FFEBCC ;
+    }
+    .logo{
+        width: 200px;
+        height: 200px;
+        margin-left: 20%;
+    }
+    .logo img{
+        margin-left:20%;
     }
     .heading{
-        padding: 10% 50px 50px 0px;
-        margin-left: 25%;
+        padding-top: 10%;
+        margin-left: 24%;
+        margin-right: 15%;
     }
-    .social{
-        width: 100%;
     
-    }
+   
     
     .sign{
-        margin: 10% 20% 0% 20%;
-        float: right;
+        margin: 5% 20% 0% 20%;
         border-style: solid;
-        padding: 1% 2% 1% 2%;
+        padding: 1%;
         border-radius: 10px;
 
     }
+
     .buttondiv{
-        display: inline-block;
-        width: 100%;
-        margin-left: -15%;
     }
 
     .buttondiv div{
-        display: block;
-        float: right;
-        margin: 10% 3% 2% 1%;
 
     }
 
     .buttondiv h3{
         text-align: center;
+        font-size: 24px;
     }
 
-   
+   .ends{
+    background-color: #FFEBCC;
 
+   }
+   .ends h3{
+    background-color: #FFEBCC;
 
+   }
+   .start{
+    background-color: #F1FFCC;
 
+   }
+   .start h3{
+    background-color: #F1FFCC;
 
+   }
     .sign a{
         color: black;
         text-decoration: none;
     }
-    #hidden{
-        display: none;
     
-    }
+    
     
     * {
         margin: 0;
         padding: 0;
         font-family: 'Indie Flower', cursive;
+        background-color: #FFEBCC;
+
     }
     
-    
-    
-    .nav1{
-        overflow: hidden;
-        height: 500px;
-        background-color: #da7d3b ;
-    
-    }
-    
-    .nav1 div{
-        display: inline-block;
-        padding: 2%;
-        
-    }
-    
-    
-    .nav1 h3{
-        display: block;
-        text-align: center;
-        border-style: solid;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: #996939;
-    
-    }
-    .nav1 h1{
-        display: block;
-        text-align: center;
-    }
-    .nav1 a{
-        color: black;
-        text-decoration: none;
-    
-    }
     .navb{
-        width: 100%;
-        top: 0;
-        height: 3%;
-        background-color: #da7d3b  ;
-    
+        background-color: #FFEBCC;
+
     }
     
-    .left{
-        display: inline-block;
-    
-        padding: 2% 2% 2% 0%
+    /* HEADER HEYO */
+    .left h1{
+        text-align: center;
+        padding-top: 5%;
+        font-size: 64px;
+        padding-bottom: 5%;
+        margin-right: 3%;
     }
+
     .right{
-        float: right;        
+        display: none;      
     }
 
-    .ends{
-        margin-right: 10%;
+    .footer{
+        display: none;
     }
 
  }
-/* -------- About Us page -------- */
-.title{
-    text-align: center;
-}
-.contactname{
-    margin-left: 46%;
-}
 
-.contactname h3{
-
-}
-
- /* -------- Sign in page for desktop -------- */
-.loginback{
-    width: 100%;
-    height: 100vh;
-    background-color: #F5DEB3;
-    margin: 0%;
-}
-
-
- .signinbox{
-    position: absolute;
-    margin-top: 10%;
-    width: fit-content;
-    height: 20%;
-    text-align: center;
-    margin-left: 40%;
-    border-style: solid;
-    padding: 5%;
-}
-
- .signin input{
-    float: left;
-
-}
-
-.signin h3{
-    text-align: left;
-}
-
-
-
-
- /* -------- APP PAGE -------- */
-
- .verification{
-    display: hidden;
-    margin-left: 20%;
- }
-
-#userlogged{
-    
-}
-
-.mood{
-    display: inline;
-}
-
-.bodyapp{
-    background-color: #F5DEB3 ;
-    margin-left: 20%;
-}
-
-
-.mainapp{
-    height: 100vh;
-    width: 100vw;
-    background-color:#F5DEB3 ;
-}
-/* ----- RECORD PAGE ------- */
-
-.radio1{
-    margin-left: 2%;
-}
-.recordback{
-    background-color:#996939 ;
-}
-.record{
-    margin-left: 20%;
-    margin-top: 10%;
-    background-color:#F5DEB3 ;
-    width: 50%;
-    padding: 2%;
-    border-radius: 10px;
-}
 
 
 /* ----------------------------------- */
@@ -363,4 +244,103 @@
         margin-right: -18%;
     }
     
+
+
+    .logob{
+        background-color: #FFEBCC ;
+    }
+    .logo{
+        display: none;
+
+    }
+    .logo img{
+        display: none;
+    }
      }
+
+     /* -------- About Us page -------- */
+.title{
+    text-align: center;
+}
+.contactname{
+    margin-left: 46%;
+}
+
+.contactname h3{
+
+}
+
+ /* -------- Sign in page for desktop -------- */
+.loginback{
+    width: 100%;
+    height: 100vh;
+    background-color: #F5DEB3;
+    margin: 0%;
+}
+
+
+ .signinbox{
+    position: absolute;
+    margin-top: 10%;
+    width: fit-content;
+    height: 20%;
+    text-align: center;
+    margin-left: 40%;
+    border-style: solid;
+    padding: 5%;
+}
+
+ .signin input{
+    float: left;
+
+}
+
+.signin h3{
+    text-align: left;
+}
+
+
+
+
+ /* -------- APP PAGE -------- */
+
+ .verification{
+    display: hidden;
+    margin-left: 20%;
+ }
+
+#userlogged{
+    
+}
+
+.mood{
+    display: inline;
+}
+
+.bodyapp{
+    background-color: #F5DEB3 ;
+    margin-left: 20%;
+}
+
+
+.mainapp{
+    height: 100vh;
+    width: 100vw;
+    background-color:#F5DEB3 ;
+}
+/* ----- RECORD PAGE ------- */
+
+.radio1{
+    margin-left: 2%;
+}
+.recordback{
+    background-color:#996939 ;
+}
+.record{
+    margin-left: 20%;
+    margin-top: 10%;
+    background-color:#F5DEB3 ;
+    width: 50%;
+    padding: 2%;
+    border-radius: 10px;
+}
